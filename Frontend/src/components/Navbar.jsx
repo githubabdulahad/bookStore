@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
+import Logout from "./Logout";
 
 const Navbar = () => {
+  
+
   const [theme, setTheme] = useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light");
   const element = document.documentElement;
   useEffect(() => {
